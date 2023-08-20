@@ -1,0 +1,68 @@
+<div class="houses-app">
+                        
+    <div class="house-container">
+        <div class="tabs">
+            <button class="tab active">Owned</button>
+            <button class="tab">Shared</button>
+        </div>
+        <div id="owned" class="tab-content">
+            <p class="no-properties-message" style="display: none;">You don't own any property...</p>
+            <div class="property-card">
+                <div class="property-header">
+                    <h3 class="property-address">123 Main St, City</h3>
+                    <i class="fas fa-home property-icon"></i>
+                </div>
+                <div class="property-info">
+                    <i class="fas fa-box info-icon" title="Shell"></i>
+                    <i class="fas fa-user-friends users-icon" title="3 Users"></i>
+                    <i class="fas fa-car info-icon" title="Garage"></i>
+                </div>
+                <div class="owner-options">
+                    <div class="add-user-section">
+                        <button class="add-access-btn"><i class="fas fa-plus"></i></button>
+                        <div class="user-input-section" style="display: none;">
+                            <input type="text" class="user-input" placeholder="Add User">
+                        </div>
+                    </div>
+                    <ul class="access-list">
+                        <li>
+                            <i class="fas fa-user user-icon"></i>
+                            <span>John Doe</span>
+                            <i class="fas fa-times remove-icon"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="shared" class="tab-content" style="display: none;">
+            <p class="no-properties-message" style="display: none;">You don't have the keys to someone else's property</p>
+            <div class="property-card">
+                <div class="property-header">
+                    <h3 class="property-address">456 Elm St, City</h3>
+                    <i class="fas fa-building property-icon"></i>
+                </div>
+                <div class="property-info">
+                    <i class="fas fa-box info-icon" title="Shell"></i>
+                    <i class="fas fa-user-friends users-icon" title="3 Users"></i>
+                    <i class="fas fa-car info-icon" title="Garage"></i>
+                </div>
+                <div class="owner-options">
+                    <div class="add-user-section">
+                        <button class="add-access-btn"><i class="fas fa-plus"></i></button>
+                        <div class="user-input-section" style="display: none;">
+                            <input type="text" class="user-input" placeholder="Add User">
+                        </div>
+                    </div>
+                    <ul class="access-list">
+                        <li>
+                            <i class="fas fa-user user-icon"></i>
+                            <span>John Doe</span>
+                            <i class="fas fa-times remove-icon"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>            
+    </div>
+    
+</div>

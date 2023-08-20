@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.houses-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #242833;
+    overflow: hidden;
+}
+
+.house-container {
+    padding-top: 4vh !important;
+    padding: 1vh;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vh;
+}
+
+.tab {
+    background-color: #1c2028;
+    color: #fff;
+    border: none;
+    padding: 0.625vh 1.25vh;
+    margin: 0 0.3125vh;
+    cursor: pointer;
+    border-radius: 0.3125vh;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(-0.1875vh);
+    box-shadow: 0 0.25vh 0.5vh rgba(0, 0, 0, 0.1);
+}
+
+.tab.active {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0.25vh 0.5vh rgba(0, 0, 0, 0.2);
+}
+
+.property-card {
+    max-width: 25vw;
+    background-color: #1c2028;
+    border-radius: 1.25vh;
+    box-shadow: 0 0.25vh 0.5vh rgba(0, 0, 0, 0.1);
+    margin: 1.25vh auto;
+    padding: 1.25vh;
+    color: white;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.property-card:hover {
+    transform: translateY(-0.3125vh);
+}
+
+.property-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.125vh solid white;
+    padding-bottom: 0.625vh;
+}
+
+.property-address {
+    color: white;
+    margin: 0;
+    font-size: 1.25vh;
+}
+
+.property-icon, .info-icon, .remove-icon, .users-icon {
+    font-size: 1.5vh;
+    margin-left: 0.625vh;
+    color: white;
+}
+
+.property-icon:hover, .info-icon:hover, .remove-icon:hover, .users-icon:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.property-info {
+    display: flex;
+    align-items: center;
+    margin-top: 0.625vh;
+    justify-content: space-between;
+}
+
+.owner-options {
+    display: none;
+    margin-top: 1.25vh;
+}
+
+.add-access-btn {
+    background-color: white;
+    color: #1c2028;
+    border: none;
+    border-radius: 3vh;
+    width: 3vh; 
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 1vh;
+}
+
+
+.add-access-btn:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.user-input-section {
+    display: flex;
+    align-items: center;
+    gap: 0.625vh;
+}
+
+.user-input {
+    flex: 1;
+    padding: 0.625vh;
+    border: 0.0625vh solid #e0e0e0;
+    border-radius: 0.3125vh;
+    font-size: 1vh;
+}
+
+.add-user-section {
+    display: flex;
+    align-items: center;
+    gap: 0.625vh;
+}
+
+.access-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.0625vh solid #e0e0e0;
+    padding: 0.3125vh 0;
+}
+
+.user-icon {
+    margin-right: 0.625vh;
+    color: white;
+}
+
+.remove-icon {
+    margin-left: 0.625vh;
+}
+
+.tooltip-inner {
+    white-space: pre-wrap;
+}
+
+.no-properties-message {
+    color: #e0e0e0;
+    font-size: 1.125vh;
+    text-align: center;
+    padding: 1.25vh;
+    margin: 1.25vh auto;
+    max-width: 25vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0.625vh;
+    transition: background-color 0.3s;
+}
+
+.no-properties-message:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
