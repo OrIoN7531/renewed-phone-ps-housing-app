@@ -257,3 +257,25 @@ end
 
 exports("HouseTrack", HouseTrack)
 ```
+9. qb-phone/fxmanifest.lua add into shared_scripts:
+
+'@ox_lib/init.lua',
+
+Example before:
+```
+shared_scripts {
+    'config.lua',
+    '@qb-apartments/config.lua',
+    '@qb-garages/config.lua',
+}
+```
+
+Example after:
+```
+shared_scripts {
+    'config.lua',
+    '@qb-apartments/config.lua',
+    '@qb-garages/config.lua',
+    '@ox_lib/init.lua',
+}
+```
