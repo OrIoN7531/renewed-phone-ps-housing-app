@@ -258,8 +258,9 @@ end
 exports("HouseTrack", HouseTrack)
 ```
 9. qb-phone/fxmanifest.lua add into shared_scripts:
-
+```
 '@ox_lib/init.lua',
+```
 
 Example before:
 ```
